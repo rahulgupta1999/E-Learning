@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="/static/bootstrap.min.css"/>
+<script src="/static/jquery.min.js"></script>
+<script src="/static/bootstrap.min.js"></script>
+</head>
+<body class="bg-success">
+
+<div class="container " style="width:100%" >
+<div class="jumbotron " >
+<h1 >Home</h1>
+<p>Welcome {{uname}}</p></div></div>
+<div class="container" style="width:100%; background-color:white;">
+
+<br>
+<ul class="nav nav-tabs" >
+<li><a href="addOpen?a=stu" target="work">Add Student</a></li>
+<li><a href="addOpen?a=instu" target="work">Add Instructor</a></li>
+<li><a href="addOpen?a=batch" target="work">Add New Batch</a></li>
+<li><a href="changepasswordOpen?a=Institute" target="work">Change Password</a></li>
+<li><a href="index" >Sign out</a></li>
+</ul>
+</div>
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" name="work"></iframe>
+</div>
+</body>
+</html>

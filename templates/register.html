@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="/static/bootstrap.min.css"/>
+<script src="/static/jquery.min.js"></script>
+<script src="/static/bootstrap.min.js"></script>
+<script src="/static/jquery-3.3.1.min.js"></script>
+<script src="/static/jquery-3.4.1.min.js"></script>
+<script>
+function check(){
+pw=$("#pwd").val()
+cpw=$("#cpwd").val()
+if(pw===cpw)
+{
+return true
+}
+else
+alert("Password don't match")
+return false
+
+}
+function check()
+{
+eid=$("#eid").val();
+//alert("eid");
+$.get("checkEmail?eid="+eid,function(data,status){
+if(data=="true")
+{
+$("eid").addClass("has-success")
+alert("available");
+}
+else
+{
+alert("Not available");
+}
+});
+}
+</script> 
+<style>
+fieldset.scheduler-border {
+    border: 3px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+	width:60%; height=100%;
+    align:center;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+			background-color:white;
+}
+
+    legend.scheduler-border {
+        font-size: 1.2em !important;
+        font-weight: bold !important;
+        text-align: left !important;
+        width:auto;
+        padding:0 10px;
+        border-bottom:none;
+    }
+</style>
+</head>
+<body class=bg-success><br><br>
+
+<fieldset class="scheduler-border">
+    <legend class="scheduler-border">Register</legend>
+<form method=post action="registerSave" class="form-horizontal" onSubmit="return check()">
+{% csrf_token %}
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="iname" > Institute Name</label>
+<div class="col-sm-6">
+<input type=text id="iname" name="iname" placeholder="Institute Name" class=form-control required /></div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="eid" > Email Id </label>
+<div class="col-sm-6">
+<input type=text id="eid" name="eid" placeholder="Email Id" class=form-control required /></div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="pwd" > Password </label>
+<div class="col-sm-6">
+<input type=password id=pwd name=pwd class=form-control placeholder="Password" required />
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="cpwd" > Confirm Password</label>
+<div class="col-sm-6">
+<input type=password id=cpwd name=cpwd class=form-control placeholder="Confirm Password" required />
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="type" >Type</label>
+<div class="col-sm-6">
+<select id="type" name="type" class="form-control"  required>
+<option value=disabled>Select Type</option>
+<option value="school">School</option>
+<option value="college">College</option>
+<option value="college">Others</option>
+</select>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="contact" >Contact</label>
+<div class="col-sm-6">
+<input type=tel placeholder="contact number" id="contact" name="contact" class=form-control required />
+</div>
+</div>
+
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="address" >Address</label>
+<div class="col-sm-6">
+<input type=text id=address placeholder="Address" name=address class=form-control required />
+</div>
+</div>
+
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="city" >City</label>
+<div class="col-sm-6">
+<input type=text id="city" placeholder="city" name="city" class=form-control required />
+</div>
+</div>
+
+<div style="text-align:center;">
+<button type=submit name=submit id=submit class="btn btn-info">Submit</button><br><br>
+</div>
+</div>
+</form>
+
+
+</fieldset>
+</body>
+</html>

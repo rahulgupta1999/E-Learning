@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="/static/bootstrap.min.css"/>
+<script src="/static/jquery.min.js"></script>
+<script src="/static/bootstrap.min.js"></script>
+<script src="/static/jquery-3.3.1.min.js"></script>
+
+<script>
+function check(){
+pw=$("#pwd").val()
+cpw=$("#cpwd").val()
+if(pw==cpw)
+{
+return true
+}
+else
+alert("Password don't match")
+return false
+
+}
+</script> 
+</head>
+<body class="bg-success" onload="checkr()"><br><br>
+
+<div class="panel panel-warning">
+<div class="panel-heading"><h1 align="center">Register Instructor<h1></div><br>
+<form method=post action="instructSave" class="form-horizontal" onSubmit="return check()">
+{% csrf_token %}
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="name" >Name</label>
+<div class="col-sm-6">
+<input type=text id="name" name="name" placeholder="Teacher Name" class=form-control required /></div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="eid" > Email Id </label>
+<div class="col-sm-6">
+<input type=text id="eid" name="eid" placeholder=Ex:A{{in}} pattern={{in}} class=form-control required /></div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="pwd" > Password </label>
+<div class="col-sm-6">
+<input type=password id=pwd name=pwd class=form-control placeholder="Password" required />
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="cpwd" > Confirm Password</label>
+<div class="col-sm-6">
+<input type=password id=cpwd name=cpwd class=form-control placeholder="Confirm Password" required />
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="gender" >Gender</label>
+<div class="col-sm-6">
+<select id='gender' name='gender' class='form-control'  required>
+<option value=disabled>Select Gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="desig" >Designation</label>
+<div class="col-sm-6">
+<select id='desig' name='desig' class='form-control'  required>
+<option value=disabled>Select designation</option>
+<option value="Assistant Professor">Assistant Professor</option>
+<option value="Professor">Professor</option>
+<option value="Associate Professor">Associate Professor</option>
+</select>
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="dob" >Date of Birth</label>
+<div class="col-sm-6">
+<input type=date id="dob" name="dob" class="form-control" required />
+</div>
+</div>
+
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="address" >Address</label>
+<div class="col-sm-6">
+<input type=text id="address" placeholder="Address" name="address" class=form-control required />
+</div>
+</div>
+
+<div style="text-align:center;">
+<button type=submit name=submit id=submit class="btn btn-info">Submit</button><br><br>
+</div>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>

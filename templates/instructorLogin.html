@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="/static/bootstrap.min.css"/>
+<script src="/static/jquery.min.js"></script>
+<script src="/static/bootstrap.min.js"></script>
+</head>
+<body class=bg-success>
+<br><br>
+<div class="container" style="align:center; ">
+<div class="panel-group" style="text-align:center;">
+<div class="panel panel-info">
+<div class="panel-heading"><h1>Instructor Login</h1></div><br><br>
+<form method=post action="loginCheckInstructor" class="form-horizontal" target="__parent" >
+{% csrf_token %}
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="eid" > Email Id </label>
+<div class="col-sm-6">
+<input type=text id=eid name=eid class=form-control required />
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="pwd" > Password </label>
+<div class="col-sm-6">
+<input type=password id=pwd name=pwd class=form-control required />
+</div>
+</div>
+
+<label class="control-label col-sm-2 text-primary" ><a href="forgot?a=inst" >Forget Password</a></label>
+
+<div style="text-align:center;">
+<button type=submit class="btn btn-info">Submit</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>

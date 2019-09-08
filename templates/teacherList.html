@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="/static/bootstrap.min.css"/>
+<script src="/static/jquery.min.js"></script>
+<script src="/static/bootstrap.min.js"></script>
+<script src="/static/jquery-3.3.1.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+$.get("getTeacherList",function(data,status){
+
+$("#b").html(data)
+});
+});
+
+
+
+
+</script>    
+</head>
+<body class="bg-warning" ><br><br>
+
+<div class="panel panel-danger" style="color:black;">
+<div class="panel-heading" style="background-color:black;" ><h1 align="center"><font color="white" >Find Teacher </font><h1></div><br>
+<form method=post action="getInstructProfile" class="form-horizontal" >
+{% csrf_token %}
+
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary"  for="subject" >Select Subject</label>
+<div  class="col-sm-6">
+<div id="b" name="b">
+<select id='subject' name='subject'  class='form-control'  required>
+<option value=disabled>No subject to select</option>
+</select>
+</div>
+</div>
+</div>
+
+
+
+
+<div style="text-align:center;">
+<button type=submit name=submit id=submit class="btn btn-info">Get Subject Teacher Pofile</button><br><br>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>

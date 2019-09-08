@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="/static/bootstrap.min.css"/>
+<script src="/static/jquery.min.js"></script>
+<script src="/static/bootstrap.min.js"></script>
+<script src="/static/jquery-3.3.1.min.js"></script>
+
+<script>
+function check(){
+pw=$("#pwd").val()
+cpw=$("#cpwd").val()
+if(pw==cpw)
+{
+return true
+}
+else
+alert("Password don't match")
+return false
+
+}
+$(document).ready(function(){
+$.get("getBatch",function(data,status){
+$("#b").html(data)
+});
+});
+</script> 
+</head>
+<body class="bg-success" onload="checkr()"><br><br>
+
+<div class="panel panel-info">
+<div class="panel-heading"><h1 align="center">Register Student<h1></div><br>
+<form method=post action="stuSave" class="form-horizontal" onSubmit="return check()">
+{% csrf_token %}
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="name" >Name</label>
+<div class="col-sm-6">
+<input type=text id="name" name="name" placeholder="Student Name" class=form-control required /></div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="eid" > Email Id </label>
+<div class="col-sm-6">
+<input type=text id="eid" name="eid" placeholder=Ex:ram{{in}} pattern={{in}} class=form-control required /></div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="pwd" > Password </label>
+<div class="col-sm-6">
+<input type=password id=pwd name=pwd class=form-control placeholder="Password" required />
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="cpwd" > Confirm Password</label>
+<div class="col-sm-6">
+<input type=password id=cpwd name=cpwd class=form-control placeholder="Confirm Password" required />
+</div>
+</div>
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="batch" >Select Batch</label>
+<div  class="col-sm-6">
+<div id="b" name="b">
+<select id='batch' name='batch' class='form-control'  required>
+<option value=disabled>No Batch to select</option>
+</select>
+</div>
+</div>
+</div>
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="contact" >Gender</label>
+<div class="col-sm-6">
+<select id='gender' name='gender' class='form-control'  required>
+<option value=disabled>Select Gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+</div>
+</div>
+
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="dob" >Date of Birth</label>
+<div class="col-sm-6">
+<input type=date id="dob" name="dob" class="form-control" required />
+</div>
+</div>
+
+
+<div class="form-group">
+<label class="control-label col-sm-2 text-primary" for="city" >Address</label>
+<div class="col-sm-6">
+<input type=text id="address" placeholder="Address" name="address" class=form-control required />
+</div>
+</div>
+
+<div style="text-align:center;">
+<button type=submit name=submit id=submit class="btn btn-info">Submit</button><br><br>
+</div>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>
