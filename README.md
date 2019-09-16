@@ -40,8 +40,16 @@
 
 ![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(15).png)
 
-###### If Students out of attempts
+###### If Students out of attempts.
 
 ![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(17).png)
 
--
+
+- ***Teacher Can see Result of whole test ***
+
+
+![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(11).png)
+
+- ***Students Can see their test history and profile***
+
+![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(13).png)
