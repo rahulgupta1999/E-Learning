@@ -1,6 +1,5 @@
 # E-Learning
-#### It is Quiz portal where Institute can register add students ,teacher,subject and batches. Teacher can organize quiz batch and subject wise and see results.Their are various features like forgot password ,view profile ,change password. 
-- ***Home Page*** 
+#### It is Quiz portal where Institute by registering can add students,teacher,subject,batches and organize quiz . 
 
 
 ![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(5).png)
@@ -45,7 +44,7 @@
 ![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(17).png)
 
 
-- ***Teacher Can see Result of whole test ***
+- ***Teacher Can see Result of whole test***
 
 
 ![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(11).png)
@@ -53,3 +52,16 @@
 - ***Students Can see their test history and profile***
 
 ![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(13).png)
+
+#  This is an overview of key features their are many more like.
+- ***Change Password*** -for all users
+- ***Update Password*** -for all users
+- ***Get student profile*** -for teachers
+- ***Add Batch and subject*** -for institute
+- ***See Question Bank*** -only for teacher
+- ***Delete Question*** -only for teacher
+- ***Forgot Password*** -for all users
+- ***Deactivate Quiz*** -for teachers only
+- ***See profile*** -for all users
+- ***Add teacher and student*** -for institute only
+- ***See pass and fail percentage*** -for teachers only
