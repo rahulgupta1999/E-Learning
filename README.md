@@ -61,13 +61,13 @@
 # This is an overview of key features their are also some more additional features -
 - ***Change Password*** -for all users
 - ***Update Password*** -for all users
-- ***Get student profile*** -for teachers
-- ***Add Batch and subject*** -for institute
+- ***Get Student Profile*** -for teachers
+- ***Add Batch And Subject*** -for institute
 - ***See Question Bank*** -only for teacher
 - ***Delete Question*** -only for teacher
 - ***Forgot Password*** -for all users
 - ***Dactivate Quiz*** -for teachers only
-- ***See profile*** -for all users
-- ***Add teacher and student*** -for institute only
-- ***See pass and fail percentage*** -for teachers only  
+- ***See Profile*** -for all users
+- ***Add Teacher And Student*** -for institute only
+- ***See Pass And Fail Percentage*** -for teachers only  
 ## and many more...
