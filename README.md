@@ -1,6 +1,6 @@
 # E-Learning
 #### It is quiz portal where Institute by registering can add students,teacher,subject,batches and organize quiz . 
--Language use - Python
+- ***Language use - Python***
 - ***Framework - Django***
 - ***Architecture - MVC***
 - ***Database - Sqlite***
