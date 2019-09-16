@@ -65,3 +65,4 @@
 - ***See profile*** -for all users
 - ***Add teacher and student*** -for institute only
 - ***See pass and fail percentage*** -for teachers only
+***and many more..***
