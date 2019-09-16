@@ -1,11 +1,11 @@
 # E-Learning
 #### It is quiz portal where Institute by registering can add students,teacher,subject,batches and organize quiz . 
-## Language use - Python
-## Framework - Django
-## Architecture - MVC
-## Database - Sqlite
-## For Frontend - Bootstrap,Html5,CSS
-## For Client Side scripting - Jquery 
+-Language use - Python
+- ***Framework - Django***
+- ***Architecture - MVC***
+- ***Database - Sqlite***
+- ***For Frontend - Bootstrap,Html5,CSS***
+- ***For Client Side scripting - Jquery*** 
 
 ![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(5).png)
 
