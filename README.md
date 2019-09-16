@@ -1,5 +1,5 @@
 # E-Learning
-#### It is Quiz portal where Institute by registering can add students,teacher,subject,batches and organize quiz . 
+#### It is quiz portal where Institute by registering can add students,teacher,subject,batches and organize quiz . 
 
 
 ![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(5).png)
@@ -44,12 +44,12 @@
 ![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(17).png)
 
 
-- ***Teacher Can see Result of whole test***
+- ***Teacher can see result of whole test***
 
 
 ![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(11).png)
 
-- ***Students Can see their test history and profile***
+- ***Students can see their test history and profile***
 
 ![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(13).png)
 
