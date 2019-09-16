@@ -61,7 +61,7 @@
 - ***See Question Bank*** -only for teacher
 - ***Delete Question*** -only for teacher
 - ***Forgot Password*** -for all users
-- ***Deactivate Quiz*** -for teachers only
+- ***Dactivate Quiz*** -for teachers only
 - ***See profile*** -for all users
 - ***Add teacher and student*** -for institute only
 - ***See pass and fail percentage*** -for teachers only  
