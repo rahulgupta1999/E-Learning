@@ -27,4 +27,21 @@
 
 ![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(18).png)
 
+
 ![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(19).png)
+
+
+- ***Activate Quiz***
+
+![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(14).png)
+
+
+- ***Attempt Quiz***
+
+![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(15).png)
+
+###### If Students out of attempts
+
+![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(17).png)
+
+-
