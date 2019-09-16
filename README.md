@@ -53,7 +53,7 @@
 
 ![Home Page](https://github.com/rahulgupta1999/E-Learning/blob/master/Output/Screenshot%20(13).png)
 
-#  This is an overview of key features their are many more like.
+# This is an overview of key features their are also some more additional features -
 - ***Change Password*** -for all users
 - ***Update Password*** -for all users
 - ***Get student profile*** -for teachers
